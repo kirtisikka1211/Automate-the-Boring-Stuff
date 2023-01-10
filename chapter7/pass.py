@@ -5,7 +5,7 @@ def PasswordDetection(x):
     lower=re.compile(r'[a-z]')
     upper=re.compile(r'[A-Z]')
     num=re.compile(r'[0-9]')
-    if length.search is None:
+    if length.search(x) is None:
         print("The password is invalid")
     elif lower.search(x) is None:
         print("The password is invalid")
