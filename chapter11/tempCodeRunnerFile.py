@@ -1,0 +1,1 @@
+raise Exception('Guess must be heads or tails!')

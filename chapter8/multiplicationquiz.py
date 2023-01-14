@@ -15,14 +15,14 @@ for quesnum in range(ques):
     chance= 0
     a = random.randint(0, 9)
     b = random.randint(0, 9)
-    correct = a * b
+    right = a * b
     while chance < max:
         chance += 1
-        timer =threading.Timer(8,print,[" UGH OH !!  Your time is up"]) 
+        timer =threading.Timer(8,print,[" UHH OH !!  Your time is up"]) 
         timer.start() 
         user= input('#%s: %s * %s = ' % (quesnum+1, a, b))
         timer.cancel()
-        if int(user) == correct:
+        if int(user) == right:
             print('Your answer is correct')
             break
         else:
